@@ -4,9 +4,13 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
+import Auth from "./components/auth-context/auth";
+
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Auth>
+      <App />
+    </Auth>
   </React.StrictMode>,
   document.getElementById('root')
 );
